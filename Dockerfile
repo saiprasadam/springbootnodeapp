@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
