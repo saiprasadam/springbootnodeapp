@@ -8,8 +8,8 @@ app.get('/',(req,res)=>{
 
 	var api_response='';
 	var options={
-		host:'localhost',
-		port:8280,
+		host:'springbootwithnode-integ.mongodb.svc',
+		port:8080,
 		path:'/course/5f0458b7545012caccdd0874',
 		method:'GET'
 	}
@@ -54,7 +54,7 @@ app.get('/',(req,res)=>{
       //  res.end(data);
     })
 });
-
-app.listen(3000,function(req,res){
-	console.log('server listen port is 3000');
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080 ;
+app.listen(port,function(req,res){
+	console.log('server listen port is'+port);
 });
