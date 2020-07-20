@@ -8,7 +8,7 @@ app.get('/',(req,res)=>{
 
 	var api_response='';
 	var options={
-		host:'springbootwithnode-integ.mongodb.svc',
+		host:'mongo-sprinteg.mongodb.svc',
 		port:8080,
 		path:'/course/5f0458b7545012caccdd0874',
 		method:'GET'
