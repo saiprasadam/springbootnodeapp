@@ -1,13 +1,13 @@
 FROM node:10.9.0
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package*.json ./
-
-COPY index.js ./
-COPY result.html ./
-
+COPY package*.json /app
+# Installing npm for DOCKER
 RUN npm install
+ 
+# Copying rest of the application to app directory
+COPY . /app
 
-EXPOSE 8080
-
-CMD [ "node", "index.js" ]
+EXPOSE 8080 
+# Starting the application using npm start
+CMD ["npm","start"]
