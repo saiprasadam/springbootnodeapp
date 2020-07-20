@@ -34,8 +34,7 @@ app.get('/',(req,res)=>{
 		 fs.appendFileSync('result.html',res_val[0]+'</h1></center>\n\n'+'<br/>\n\n<h4 margin-bottom: 30px><right>')
 		 fs.appendFileSync('result.html',"Course Owner :"+res_val[1]+'<br/><u>'+"Contact"+res_val[2]+'</u>'+'</right></h4>\n\n<h3>\n\n')
 		 fs.appendFileSync('result.html',
-		 fs.appendFileSync('result.html',"<table style='width:100%'>"+
-  "<tr>"
+		 fs.appendFileSync('result.html',"<table style='width:100%'><tr>"
     "<th>Pre requisties</th>"
     "<th>Enroll courses</th></tr><tr><td>Course Modules</td><td>Assessment</td><td>Hands on Mini project</td><td>Course in progress</td></tr><tr><td>Mentor</td><td>Code Samples</td><td>Reference Materials</td></tr><tr><td>Download Course/Completation Certificate</td><td>Alumni</td><td>Comments</td><td>Post Comments</td></tr></table>")
 		 fs.appendFileSync('result.html','</h3>\n\n')
