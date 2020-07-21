@@ -7,6 +7,9 @@ const { json } = require('express');
 app.get('/',(req,res)=>{
 
 	var api_response='';
+	var port = process.env.PORT || process.env.OPENSHIFT_WILDFLY_PORT || 8080 ;
+	var host = process.env.HOST || process.env.OPENSHIFT_WILDFLY_HOST || 'mongo1-sprinteg.newmongoinstance.svc' ;
+	console.log("wildfly-host---"+host+"port---"+port);
 	var options={
 		host:'mongo-sprinteg.newmongoinstance.svc',
 		port:8080,
