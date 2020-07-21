@@ -8,7 +8,7 @@ app.get('/',(req,res)=>{
 
 	var api_response='';
 	var options={
-		host:'mongo-sprinteg.mongodb.svc',
+		host:'mongo-sprinteg.newmongoinstance.svc',
 		port:8080,
 		path:'/course/5f0458b7545012caccdd0874',
 		method:'GET'
